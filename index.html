@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Подключение к amoCRM</title>
+    <meta charset="utf-8">
+    <title>Подключение к amoCRM</title>
 </head>
+
 <body>
     <div align='center'>Добрый день!<br>
         Здесь вы можете создать новое подключение к amoCRM или проверить было ли выполнено подключение.<br>
         Для создания нового подключения нажмите здесь:</div>
-        <div align='center' class="newConnect">
-            <form class="newConnect" id="newConnect" method="post" action="GetAccess.php">
-                <input class="newButton" name="newButton" type="submit">
-            </form>
-        </div>
-        <br><br>
-        <div align='center'>Если подключение было настроено, то можно приступать к отправке заявки. <br>
+    <div align='center' class="newConnect">
+        <form class="newConnect" id="newConnect" method="post" action="GetAccess.php">
+            <input class="newButton" name="newButton" type="submit">
+        </form>
+    </div>
+    <br><br>
+    <div align='center'>Если подключение было настроено, то можно приступать к отправке заявки. <br>
         Нажмите здесь для проверки подключения: </div>
-        <div align='center' class="checkConnect">
-            <form class="checkConnect" id="checkConnect" method="post" action="GetAccess.php">
-                <input class="checkButton" name="checkButton" type="submit">
-            </form>
-        </div>
-        <br><br>
+    <div align='center' class="checkConnect">
+        <form class="checkConnect" id="checkConnect" method="post" action="GetAccess.php">
+            <input class="checkButton" name="checkButton" type="submit">
+        </form>
+    </div>
+    <br><br>
 
     <!-- Roistat Counter Start -->
-<script>
-    (function(w, d, s, h, id) {
-        w.roistatProjectId = id; w.roistatHost = h;
-        var p = d.location.protocol == "https:" ? "https://" : "http://";
-        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-    })(window, document, 'script', 'cloud.roistat.com', '9b194a91372d03d18684b8e774433c0f');
+    <script>
+        (function (w, d, s, h, id) {
+            w.roistatProjectId = id; w.roistatHost = h;
+            var p = d.location.protocol == "https:" ? "https://" : "http://";
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+            var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', '9b194a91372d03d18684b8e774433c0f');
     </script>
     <!-- Roistat Counter End -->
 </body>
+
 </html>

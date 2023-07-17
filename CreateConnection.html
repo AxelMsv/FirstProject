@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Подключение к amoCRM</title>
+    <meta charset="utf-8">
+    <title>Подключение к amoCRM</title>
 </head>
+
 <body>
     <div align='center'>
         Здесь вы можете создать новое подключение к amoCRM.<br>
         Для этого нужно заполнить поля ниже данными из amoCRM. <br>
-        Подробнее здесь: <a href="https://www.amocrm.ru/developers/content/oauth/step-by-step">Пример по шагам</a> <br><br></div>
-        <form method="post" action="./GetAccess.php">
-            <table width="100%" cellspacing="0" cellpadding="4">
-                <tr> 
-                    <td align="right">Домен</td>
-                    <td><input type="text" name="domain" maxlength="100" size="50"></td>
-                   </tr>
-             <tr> 
-                <tr> 
-                    <td align="right">Секретный ключ</td>
-                    <td><input type="text" name="client_secret" maxlength="100" size="50"></td>
-                   </tr>
-             <tr> 
-              <td align="right" width="100">ID интеграции</td>
-              <td><input type="text" name="client_id" maxlength="100" size="50"></td>
-             </tr>
+        Подробнее здесь: <a href="https://www.amocrm.ru/developers/content/oauth/step-by-step">Пример по шагам</a>
+        <br><br></div>
+    <form method="post" action="./GetAccess.php">
+        <table width="100%" cellspacing="0" cellpadding="4">
+            <tr>
+                <td align="right">Домен</td>
+                <td><input type="text" name="domain" maxlength="100" size="50"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td align="right">Секретный ключ</td>
+                <td><input type="text" name="client_secret" maxlength="100" size="50"></td>
+            </tr>
+            <tr>
+                <td align="right" width="100">ID интеграции</td>
+                <td><input type="text" name="client_id" maxlength="100" size="50"></td>
+            </tr>
 
-             <tr> 
-            <td align="right">Код авторизации</td>
-              <td><input type="text" name="code" maxlength="1000" size="50"></td>
-              </tr>
-            <tr> 
-              <td></td>
-              <td><input type="submit" name="createRequestButton" value="Создать подключение"></td>
-             </tr>
-            </table>
-           </form>
-           <form class="back" id="back" method="post" action="./index.html">
-            <input class="backButton" name="backButton" type="submit" value="Назад">
-        </form>
+            <tr>
+                <td align="right">Код авторизации</td>
+                <td><input type="text" name="code" maxlength="1000" size="50"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="createRequestButton" value="Создать подключение"></td>
+            </tr>
+        </table>
+    </form>
+    <form class="back" id="back" method="post" action="./index.html">
+        <input class="backButton" name="backButton" type="submit" value="Назад">
+    </form>
     <!-- Roistat Counter Start -->
-<script>
-    (function(w, d, s, h, id) {
-        w.roistatProjectId = id; w.roistatHost = h;
-        var p = d.location.protocol == "https:" ? "https://" : "http://";
-        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-    })(window, document, 'script', 'cloud.roistat.com', '9b194a91372d03d18684b8e774433c0f');
+    <script>
+        (function (w, d, s, h, id) {
+            w.roistatProjectId = id; w.roistatHost = h;
+            var p = d.location.protocol == "https:" ? "https://" : "http://";
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+            var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', '9b194a91372d03d18684b8e774433c0f');
     </script>
     <!-- Roistat Counter End -->
 </body>
+
 </html>
